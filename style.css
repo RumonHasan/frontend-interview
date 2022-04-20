@@ -2,3 +2,43 @@
   margin: 0;
   padding: 0;
 }
+
+.category {
+  margin: 1rem;
+}
+
+.question {
+  border: 2px solid green;
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+}
+
+.question:hover {
+  cursor: pointer;
+  transition: 450ms ease-in-out;
+  transform: scale(1.05);
+}
+
+.list-container {
+  display: flex;
+}
+
+.status {
+  border: 2px solid black;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+.status.unattempted {
+  background-color: white;
+}
+.status.correct {
+  background-color: green;
+}
+.status.partially-correct {
+  background-color: yellow;
+}
